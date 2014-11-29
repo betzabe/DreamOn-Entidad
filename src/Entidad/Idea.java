@@ -8,7 +8,7 @@ public class Idea implements Serializable{
 	private String descripcion;
 	private ListaIdea listaIdea;
 	private Categoria categoria;
-	private int estatus;
+	private boolean cumplida;
 	
 	public int getId() {
 		return id;
@@ -28,17 +28,17 @@ public class Idea implements Serializable{
 	public void setListaIdea(ListaIdea listaIdea) {
 		this.listaIdea = listaIdea;
 	}
-	public int getEstatus() {
-		return estatus;
-	}
-	public void setEstatus(int estatus) {
-		this.estatus = estatus;
-	}
 	public Categoria getCategoria() {
 		return categoria;
 	}
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
+	}
+	public boolean isCumplida() {
+		return cumplida;
+	}
+	public void setCumplida(boolean cumplida) {
+		this.cumplida = cumplida;
 	}
 	
 	
