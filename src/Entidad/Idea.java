@@ -2,13 +2,13 @@ package Entidad;
 
 import java.io.Serializable;
 
-import Enum.Categoria;
 
 public class Idea implements Serializable{
 	private int id;
 	private String descripcion;
 	private ListaIdea listaIdea;
 	private Categoria categoria;
+	private int estatus;
 	
 	public int getId() {
 		return id;
@@ -27,6 +27,12 @@ public class Idea implements Serializable{
 	}
 	public void setListaIdea(ListaIdea listaIdea) {
 		this.listaIdea = listaIdea;
+	}
+	public int getEstatus() {
+		return estatus;
+	}
+	public void setEstatus(int estatus) {
+		this.estatus = estatus;
 	}
 	public Categoria getCategoria() {
 		return categoria;
